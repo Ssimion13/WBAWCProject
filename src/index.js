@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { brown, red } from '@mui/material/colors';
+import { brown } from '@mui/material/colors';
 
 import App from './App';
 

@@ -2,11 +2,9 @@ import {Link} from "react-router-dom"
 import { AppBar, Box, Divider, Drawer, Grid, IconButton,  List, ListItem, ListItemIcon, ListItemText, Toolbar, Typography } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu'
 import React from 'react';
-import { useTheme } from '@mui/material/styles';
 
 
 export default function Dashboard() {
-  const theme = useTheme();
     const [state, setState] = React.useState({
         top: false,
         left: false,

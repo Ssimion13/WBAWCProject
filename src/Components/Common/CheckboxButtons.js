@@ -1,9 +1,9 @@
 
-import { Checkbox, Grid, Typography } from '@mui/material';
+import { Checkbox, Grid } from '@mui/material';
 import "../../App.css"
 
 //TODO Any will work for now.
-export default function CheckoutButtons(props: any) {
+export default function CheckoutButtons(props) {
   const {
     isVideoOpen,
     isJapaneseCharactersVisible,

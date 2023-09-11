@@ -1,8 +1,5 @@
 import { Grid } from "@mui/material"
 import React from "react"
-//TODO should I move these to a separate folder?
-import {Header, Footer} from "./Template/index.js"
-import Overview from "./Overview.js"
 
 
 
