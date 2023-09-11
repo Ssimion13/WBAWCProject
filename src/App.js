@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import "./App.css"
+import { Grid } from "@mui/material"
+import { Routes, Route, BrowserRouter } from 'react-router-dom'
+import MainPage from "./Components/MainPage"
+import Dashboard from "./Dashboard"
+import { Hanipaganda, LikeAnAnimal, PrayerVessel, EveryDayIsAGoodDay, TheCreator, WildernessPegasus, RockAByeBaby, Step123 } from "./Components/HanipagandaAlbum"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App () {
+    return (
+      <Grid className="App">
+        <BrowserRouter>
+          <Dashboard />
+          <Routes>
+          <Route path="/TheCreator" element={<TheCreator />} />
+          <Route path="/Hanipaganda" element={<Hanipaganda />} />
+          <Route path="/LikeAnAnimal" element={<LikeAnAnimal />} />
+          <Route path="/Step123" element={<Step123/>} />
+          <Route path="/RockAByeBaby" element={<RockAByeBaby/>} />
+          <Route path="/EveryDayIsAGoodDay" element={<EveryDayIsAGoodDay/>} />
+          <Route path="/WildernessPegasus" element={<WildernessPegasus/>} />
+          <Route path="/PrayerVessel" element={<PrayerVessel/>} />
+            <Route path="/*" element={<MainPage />} />
+          </Routes>
+        </BrowserRouter>
+      </Grid>
+    )
 }
-
-export default App;
